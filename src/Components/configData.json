@@ -1,0 +1,16 @@
+{
+    
+     "options" : [
+        { "key": 1, "text": "MEDICARE", "value": "MEDICARE" },
+        { "key": 2, "text": "COMMERCIAL", "value": "COMMERCIAL" },
+        { "key": 3, "text": "EXCHANGE", "value": "EXCHANGE" },
+        { "key": 4, "text": "MEDICAID", "value": "MEDICAID"}
+      ],
+      "tableRow":[
+        {"lob":"MEDICARE","step":"In Review","dueDate":"09/04/2020 @ 9:00 AM","progressClass":"orangeProgress"},
+        {"lob":"COMMERCIAL","step":"In Review","dueDate":"09/09/2020 @ 5:00 PM","progressClass":"purpleProgress"},
+        {"lob":"EXCHANGE","step":"In Review","dueDate":"09/18/2020 @ 10:30 AM","progressClass":"greenProgress"},
+        {"lob":"MEDICAID","step":"In Review","dueDate":"No due date","progressClass":"noProgress"}
+      ]
+    
+  }
