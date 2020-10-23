@@ -12,7 +12,6 @@ import upSort from "../../assets/upSort.png";
 import { Loader,  Segment } from "semantic-ui-react";
 import configData from "../configData.json";
 
-
 class Home extends Component {
   constructor(props) {
     super(props);
@@ -36,11 +35,11 @@ class Home extends Component {
         return filterData.includes(row.lob);
       });
       this.setState({ tableRow: filteredTable });
-      console.log(this.state);
+      console.log("check", this.state);
     }
   };
   render() {
-    const friendOptions = [
+    const defaultOptions = [
       {
         image: (
           <Label className="Manish" as="a" circular>
@@ -93,7 +92,7 @@ class Home extends Component {
       },
     ];
 
-    const panes = [
+    const data = [
       {
         menuItem: "UNASSIGNED TASKS",
         pane: (
@@ -257,8 +256,8 @@ class Home extends Component {
                           <Dropdown
                             inline
                             className="assignDrops"
-                            options={friendOptions}
-                            defaultValue={friendOptions[4].value}
+                            options={defaultOptions}
+                            defaultValue={defaultOptions[4].value}
                           />
                         </Table.Cell>
                         <Table.Cell>{row.step}</Table.Cell>
@@ -300,14 +299,14 @@ class Home extends Component {
             Assign Task(s)
           </Menu.Item>
         ),
-        render: () => <Tab.Pane>Tab 3 Content</Tab.Pane>,
+        // render: () => <Tab.Pane>Tab 3 Content</Tab.Pane>,
       },
     ];
 
     return (
       <div>
         <div>
-        <Tab className="tab-header" panes={panes} renderActiveOnly={false} />
+        <Tab className="tab-header" panes={data} renderActiveOnly={false} />
       </div>
      
         
