@@ -14,9 +14,9 @@ import configData from "../configData.json";
 
 class Home extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
-      filter: [],
+      search: [],
     };
   }
   componentDidMount() {
@@ -25,12 +25,12 @@ class Home extends Component {
    
   }
   handleFilterChange = (e, { value }) => {
-    this.setState({ filter: value }, this.filterTable);
+    this.setState({ search: value }, this.filterTable);
   };
   filterTable = () => {
     let tableData = configData.tableRow;
-    if (this.state.filter.length > 0) {
-      let filterData = this.state.filter;
+    if (this.state.search.length > 0) {
+      let filterData = this.state.search;
       var filteredTable = tableData.filter(function (row) {
         return filterData.includes(row.lob);
       });
