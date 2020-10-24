@@ -1,6 +1,5 @@
 
 .tab-header{
-font-family: 'Roboto',sans-serif !important; 
 font-style: normal;
 font-size: 12px;
 line-height: 30px;
@@ -22,24 +21,7 @@ color: #666666;
   margin-bottom: 7px;
 }
 
-.table-container{
-    border-collapse: collapse !important;
-}
-.table-container> tbody> tr {
-    border: 5px solid #e4f3ef;
-}
-.tab-header> .ui> .active{
-    color: #1D54B4 !important;
-}
-.tab-header> .ui> .item{
-   border-right: 1px solid #C4C4C4 !important;
-}
-.toggleBtn{
-    font-size: 12px;
-}
-tbody> tr> td {
-    border: none !important;
-}
+
 .taskName{
     font-family: 'Roboto',sans-serif !important; 
 font-style: normal;
@@ -71,6 +53,24 @@ color: #2055B5;
 }
 .purple{
     background: #684999;
+}
+.table-container{
+    border-collapse: collapse !important;
+}
+.table-container> tbody> tr {
+    border: 5px solid #e4f3ef;
+}
+.tab-header> .ui> .active{
+    color: #1D54B4 !important;
+}
+.tab-header> .ui> .item{
+   border-right: 1px solid #C4C4C4 !important;
+}
+.toggleBtn{
+    font-size: 12px;
+}
+tbody> tr> td {
+    border: none !important;
 }
 th {
     text-transform: uppercase !important;
@@ -169,28 +169,10 @@ line-height: 24px;
 }
 .orangeProgress> .bar{
     background: rgba(244, 175, 100, 0.5) !important;
-    border: 1px solid #F4AF64 !important;
-    width: 180px !important;
+    border: 1px solid rgb(59, 49, 38) !important;
+    width: 200px !important;
 }
 
-.purpleProgress> .bar {
-    background: rgba(95, 128, 185, 0.5) !important;
-    border: 1px solid #5F80B9 !important;
-    width: 120px !important;
-}
-.purpleProgress> .bar> .progress {
-    width: 40px !important;
-}
-
-.greenProgress> .bar {
-    background: rgba(128, 196, 131, 0.5) !important;
-    border: 1px solid #80C483 !important;
-    width: 35px !important;
-}
-.greenProgress> .bar> .progress {
-    width: 1px !important;
-    left: 20px !important;
-}
 .noProgress {
     border: 1px dashed #E5E5E5 !important;
 }

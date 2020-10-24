@@ -53,7 +53,7 @@ class Home extends Component {
       {
         image: (
           <Label className="Babu" as="a" circular>
-            J
+            B
           </Label>
         ),
         key: "Babu Balakrishnan",
@@ -63,7 +63,7 @@ class Home extends Component {
       {
         image: (
           <Label className="Gaurav" as="a" circular>
-            N
+            G
           </Label>
         ),
         key: "Gaurav",
@@ -73,7 +73,7 @@ class Home extends Component {
       {
         image: (
           <Label className="Puneet" as="a" circular>
-            S
+            P
           </Label>
         ),
         key: "Puneet",
@@ -263,7 +263,7 @@ class Home extends Component {
                         <Table.Cell>{row.step}</Table.Cell>
                         <Table.Cell>
                           <Progress
-                            className={"timeProgress " + row.progressClass}
+                            className={"timeProgress orangeProgress" }
                             progress="value"
                             value={row.dueDate}
                           />
@@ -298,8 +298,7 @@ class Home extends Component {
           <Menu.Item key="messages" className="to-right">
             Assign Task(s)
           </Menu.Item>
-        ),
-        // render: () => <Tab.Pane>Tab 3 Content</Tab.Pane>,
+        )
       },
     ];
 
